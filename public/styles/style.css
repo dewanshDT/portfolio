@@ -36,8 +36,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
   overflow-x: hidden;
-  background-image: -webkit-gradient(linear, left top, right top, from(#191919), to(#191919ee)), url(/assets/Doodles19976_square.jpg);
-  background-image: linear-gradient(to right, #191919, #191919ee), url(/assets/Doodles19976_square.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(#191919), to(#191919ee)), url(/assets/doodle.jpg);
+  background-image: linear-gradient(to right, #191919, #191919ee), url(/assets/doodle.jpg);
+}
+
+.comment {
+  color: inherit;
+  opacity: .5;
 }
 
 .container {
@@ -49,8 +54,8 @@ body {
 .header {
   z-index: 2;
   width: 100vw;
-  background: -webkit-gradient(linear, left top, left bottom, from(#191919), color-stop(80%), to(#0000));
-  background: linear-gradient(#191919, 80%, #0000);
+  background: -webkit-gradient(linear, left top, left bottom, from(#191919), to(#0000));
+  background: linear-gradient(#191919, #0000);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,7 +77,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: var(--xsFont);
+  font-size: var(--sFont);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -104,6 +109,8 @@ body {
           align-items: center;
   margin-right: 1rem;
   padding: 0 0.5em;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 
 .navbar nav li {
@@ -216,7 +223,7 @@ main {
 }
 
 .intro .comment {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .intro .center-icon {

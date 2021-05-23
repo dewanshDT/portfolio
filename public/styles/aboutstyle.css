@@ -1,12 +1,25 @@
+:root {
+  --ascentColor: #ffb600;
+  --uiDark: #191919;
+  --uiLight: #ffb680;
+  --xlFont: 6rem;
+  --lFont: 4rem;
+  --mFont: 2.5rem;
+  --sFont: 1.5rem;
+  --xsFont: 1.3rem;
+}
+
 body {
-  background-image: -webkit-gradient(linear, left top, right top, from(#191919), to(#0000)), url("/assets/dewansh.png");
-  background-image: linear-gradient(to right, #191919, #0000), url("/assets/dewansh.png");
-  background-size: 100%, 100vh auto;
+  background-image: -webkit-gradient(linear, left top, right top, from(#191919), to(#191919dd)), url("/assets/circles.jpg");
+  background-image: linear-gradient(to right, #191919, #191919dd), url("/assets/circles.jpg");
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right top;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   overflow: hidden;
 }
 
@@ -18,25 +31,32 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100%;
   flex-direction: column;
   padding: 3rem 4rem;
-  width: 100vw;
+  min-width: 100vw;
   height: 100vh;
+  overflow: auto;
+}
+
+.about-page img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin: 2rem 0 2rem 0;
 }
 
 .about-page h1 {
-  font-size: 3rem;
+  font-size: var(--lFont);
   margin-bottom: 0.5em;
 }
 
 .about-page .subheading {
-  color: #ffb600;
+  color: var(--ascentColor);
 }
 
 .about-page h3 {
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: var(--sFont);
   margin: 0.5em 0;
 }
 
@@ -44,11 +64,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .about-page .about-content p {
   margin: 0.7em;
-  min-width: 18vw;
+  min-width: 20vw;
   line-height: 1.5em;
 }
 
@@ -58,11 +82,11 @@ body {
 
 .btn {
   text-decoration: none;
-  color: #ffb600;
-  font-size: 1.2rem;
+  color: var(--ascentColor);
+  font-size: var(--xsFont);
   padding: 0.4em 0.6em;
   background-color: #333;
-  margin: .9em 0;
+  margin: 0.9em 0;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -73,7 +97,7 @@ body {
 }
 
 .btn:hover {
-  color: #191919;
+  color: var(--uiDark);
   background-color: beige;
 }
 /*# sourceMappingURL=aboutstyle.css.map */
