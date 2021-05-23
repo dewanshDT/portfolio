@@ -215,6 +215,10 @@ main {
   font-weight: 300;
 }
 
+.intro .comment {
+  opacity: .5;
+}
+
 .intro .center-icon {
   display: none;
 }
