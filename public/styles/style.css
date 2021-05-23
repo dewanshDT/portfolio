@@ -1,0 +1,383 @@
+:root {
+  --ascentColor: #ffb600;
+  --uiDark: #191919;
+  --uiLight: #ffb680;
+  --xlFont: 6rem;
+  --lFont: 4rem;
+  --mFont: 2.5rem;
+  --sFont: 1.5rem;
+  --xsFont: 1.3rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: var(--uiDark);
+  color: beige;
+  font-family: "Roboto Mono", monospace;
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: hidden;
+  background-image: -webkit-gradient(linear, left top, right top, from(#191919), to(#191919ee)), url(/assets/Doodles19976_square.jpg);
+  background-image: linear-gradient(to right, #191919, #191919ee), url(/assets/Doodles19976_square.jpg);
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  min-height: 100vh;
+}
+
+.header {
+  z-index: 2;
+  width: 100vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(#191919), color-stop(80%), to(#0000));
+  background: linear-gradient(#191919, 80%, #0000);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.navbar {
+  display: block;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0.5em;
+  padding-bottom: 2rem;
+  padding-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: var(--xsFont);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .hamburgur {
+  display: none;
+}
+
+.navbar .brand {
+  color: var(--ascentColor);
+  font-size: inherit;
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar nav {
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1rem;
+  padding: 0 0.5em;
+}
+
+.navbar nav li {
+  display: inline;
+  font-size: inherit;
+  padding: 0.5em;
+}
+
+.navbar nav li a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+.navbar nav li a.router-link-exact-active {
+  color: var(--ascentColor);
+  cursor: default;
+}
+
+.navbar nav li:hover {
+  color: var(--ascentColor);
+  -webkit-transition: color 300ms ease;
+  transition: color 300ms ease;
+}
+
+.navbar nav.visibal {
+  display: block;
+}
+
+.links {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  right: 4rem;
+  top: calc(50% - ((1.5rem * 3) + (1rem * 6)) / 2);
+}
+
+.links a {
+  color: var(--ascentColor);
+  margin: 1rem 0;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.links a svg {
+  width: 2.3rem;
+  height: 2.3rem;
+  -webkit-transition: all 100ms ease;
+  transition: all 100ms ease;
+}
+
+.links a:hover {
+  color: beige;
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+}
+
+.links a:hover svg {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+main {
+  margin: 1rem;
+  padding: 5rem 7.5rem;
+  overflow-x: hidden;
+}
+
+.intro {
+  margin-top: 7rem;
+  margin-left: 1rem;
+  margin-bottom: 3.5rem;
+  margin-right: 2.5rem;
+  min-height: 50vh;
+}
+
+.intro h1 {
+  position: relative;
+  font-size: var(--xlFont);
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.intro h1 .me-icon {
+  position: absolute;
+  width: 8.5rem;
+  height: 8.5rem;
+  top: -7rem;
+  -webkit-transform: rotateZ(25deg);
+          transform: rotateZ(25deg);
+}
+
+.intro h3 {
+  color: var(--ascentColor);
+  font-size: var(--mFont);
+  padding: 0.5em;
+  padding-left: 3rem;
+}
+
+.intro p {
+  padding-left: 3rem;
+  line-height: 1.2em;
+  font-size: var(--xsFont);
+  font-weight: 300;
+}
+
+.intro .center-icon {
+  display: none;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 80vh;
+  padding: 1rem 1rem;
+}
+
+.about div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 4rem;
+}
+
+.about h1 {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  font-size: var(--lFont);
+  color: var(--ascentColor);
+  font-weight: 400;
+}
+
+.about p {
+  font-size: var(--xsFont);
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  line-height: 1.7em;
+  font-weight: 200;
+}
+
+.stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 6rem 0.5rem;
+  width: 100%;
+}
+
+.stats .stat {
+  padding-top: 25%;
+  text-align: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.stats .stat .stat-num {
+  width: 100%;
+  font-size: var(--xlFont);
+  font-weight: 500;
+  padding: 0.1em;
+}
+
+.stats .stat p {
+  width: 100%;
+  font-size: var(--sFont);
+  font-weight: 500;
+  color: var(--ascentColor);
+}
+
+.content,
+.final {
+  margin-top: 5rem;
+  min-height: 80vh;
+  padding-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content h1,
+.final h1 {
+  color: var(--ascentColor);
+  font-size: var(--lFont);
+  font-weight: 700;
+  padding: 0.1em 0;
+}
+
+.content h1 .comment,
+.final h1 .comment {
+  font-size: var(--mFont);
+  font-weight: 400;
+}
+
+.content p,
+.final p {
+  font-size: var(--xsFont);
+  line-height: 1.5em;
+}
+
+.content .comment,
+.final .comment {
+  color: #777;
+}
+
+.content a,
+.final a {
+  color: beige;
+  text-decoration: none;
+}
+
+.content a:hover,
+.final a:hover {
+  color: var(--uiLight);
+}
+
+.made-with {
+  margin-top: 5rem;
+  min-height: 80vh;
+  padding-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.made-with .comment {
+  color: #777;
+  font-size: var(--sFont);
+}
+
+.made-with a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.made-with a:hover {
+  color: var(--uiLight);
+}
+
+.made-with div {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--ascentColor);
+}
+
+.made-with div p {
+  padding-right: 3rem;
+  line-height: 1.7em;
+  font-size: var(--xsFont);
+  font-weight: 400;
+}
+/*# sourceMappingURL=style.css.map */
