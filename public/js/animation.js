@@ -119,9 +119,10 @@ var madeWithScene = new ScrollMagic.Scene({
 // responsive navbar
 
 const menueBtn = document.querySelector(".hamburgur");
-const nav = document.querySelector('nav')
+const nav = document.querySelector('nav');
 
 menueBtn.addEventListener("click", () => {
   nav.classList.toggle("visibal");
+  menueBtn.classList.toggle("on");
   console.log('clicked');
 });

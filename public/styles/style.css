@@ -87,6 +87,11 @@ body {
   display: none;
 }
 
+.navbar .hamburgur .line {
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
 .navbar .brand {
   color: var(--ascentColor);
   font-size: inherit;
@@ -139,6 +144,27 @@ body {
 .navbar nav.visibal {
   opacity: 1;
   pointer-events: all;
+}
+
+.navbar .hamburgur.on .line {
+  background: var(--ascentColor);
+  position: absolute;
+  right: .1rem;
+  top: -.8rem;
+}
+
+.navbar .hamburgur.on .line:first-child {
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+}
+
+.navbar .hamburgur.on .line:nth-child(2) {
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.navbar .hamburgur.on .line:nth-child(3) {
+  display: none;
 }
 
 .links {

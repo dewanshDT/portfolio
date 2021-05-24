@@ -29,13 +29,14 @@
   .navbar {
     position: relative;
     padding-top: 0.7rem;
+    justify-content: flex-start;
     .hamburgur {
       z-index: 3;
       display: block;
       position: absolute;
       top: 50%;
       right: 5%;
-      transform: translateY(-50%);
+      transform: translateY(-45%);
       .line {
         width: 25px;
         height: 3px;
