@@ -23,6 +23,11 @@ body {
   overflow: hidden;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+}
+
 .about-page {
   display: -webkit-box;
   display: -ms-flexbox;
