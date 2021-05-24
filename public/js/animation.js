@@ -91,7 +91,7 @@ var statsScene = new ScrollMagic.Scene({
 
 var contentScene = new ScrollMagic.Scene({
   triggerElement: ".content",
-  duration: "300%",
+  duration: "400%",
   triggerHook: 0.1,
 })
   .setPin(".content")
@@ -109,7 +109,7 @@ var finalScene = new ScrollMagic.Scene({
 
 var madeWithScene = new ScrollMagic.Scene({
   triggerElement: ".made-with",
-  duration: "300%",
+  duration: "400%",
   triggerHook: 0.1,
 })
   .setPin(".made-with")
