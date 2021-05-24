@@ -83,6 +83,10 @@ body {
     padding: 0 0.5em;
     transition: all 300ms ease;
 
+    ul {
+      transition: all 300ms ease;
+    }
+
     li {
       display: inline;
       font-size: inherit;
@@ -109,6 +113,10 @@ body {
   nav.visibal {
     opacity: 1;
     pointer-events: all;
+
+    ul {
+      transform: translateX(0);
+    }
   }
 
   .hamburgur.on {
