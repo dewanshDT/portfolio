@@ -47,7 +47,9 @@
 
     nav {
       z-index: 2;
-      display: none;
+      opacity: 0;
+      transition: opacity 300ms ease;
+      pointer-events: none;
       position: fixed;
       top: 0;
       width: 100%;
@@ -63,6 +65,7 @@
         width: 100%;
         padding: 4rem 2rem;
         font-size: 2rem;
+        pointer-events: inherit;
       }
     }
 

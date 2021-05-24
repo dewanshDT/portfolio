@@ -137,7 +137,8 @@ body {
 }
 
 .navbar nav.visibal {
-  display: block;
+  opacity: 1;
+  pointer-events: all;
 }
 
 .links {

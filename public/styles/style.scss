@@ -104,7 +104,8 @@ body {
   }
 
   nav.visibal {
-    display: block;
+    opacity: 1;
+    pointer-events: all;
   }
 }
 
