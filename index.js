@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+const codepenData = require("./codepen.json");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -22,7 +23,7 @@ app.get("/about", (req, res) => {
 app.get("/works", (req, res) => {
   const title = ".works()";
   const style = "workstyle.css";
-  res.render("works", { title, style });
+  res.render("works", { title, style, codepenData });
 });
 
 app.listen(PORT, () => {

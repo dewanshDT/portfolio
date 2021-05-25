@@ -1,0 +1,30 @@
+:root {
+  --ascentColor: #ffb600;
+  --uiDark: #191919;
+  --uiLight: #ffb680;
+  --xlFont: 6rem;
+  --lFont: 4rem;
+  --mFont: 2.5rem;
+  --sFont: 1.5rem;
+  --xsFont: 1.3rem;
+}
+
+.codepen-container {
+  padding: 2rem;
+}
+
+.codepen-container h1 {
+  font-size: var(--mFont);
+  color: var(--ascentColor);
+}
+
+.codepen-container h4 {
+  padding-bottom: 1rem;
+  font-size: var(--sFont);
+  font-weight: 300;
+}
+
+.links {
+  display: none;
+}
+/*# sourceMappingURL=workstyle.css.map */
