@@ -74,6 +74,7 @@
     }
 
     .links {
+      display: flex;
       position: static;
       flex-direction: row;
       margin-right: 2rem;

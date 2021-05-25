@@ -79,6 +79,9 @@
             transform: translateX(3rem);
   }
   .navbar .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: static;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
