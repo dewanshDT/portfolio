@@ -30,6 +30,53 @@ body {
     url(/assets/doodle.jpg);
 }
 
+.loading-page {
+  z-index: 4;
+  position: fixed;
+  background: linear-gradient(to right, #191919ee, #191919ee),
+  url(/assets/doodle.jpg);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 300ms ease;
+
+  .circles {
+    position: relative;
+    min-width: 5rem;
+    min-height: 5rem;
+    // transform: scale(3);
+  }
+
+  img {
+    position: absolute;
+    width: 5rem;
+    transform: translate(-50%, -50%);
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .circle {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    border: 10px solid beige;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: loading 0.8s ease-in infinite;
+  }
+
+  @keyframes loading {
+    100% {
+      width: 9rem;
+      height: 9rem;
+      border: 1px solid beige;
+      opacity: 0;
+    }
+  }
+}
+
 .comment {
   color: inherit;
   opacity: .5;

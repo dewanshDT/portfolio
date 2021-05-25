@@ -40,6 +40,71 @@ body {
   background-image: linear-gradient(to right, #191919, #191919ee), url(/assets/doodle.jpg);
 }
 
+.loading-page {
+  z-index: 4;
+  position: fixed;
+  background: -webkit-gradient(linear, left top, right top, from(#191919ee), to(#191919ee)), url(/assets/doodle.jpg);
+  background: linear-gradient(to right, #191919ee, #191919ee), url(/assets/doodle.jpg);
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+.loading-page .circles {
+  position: relative;
+  min-width: 5rem;
+  min-height: 5rem;
+}
+
+.loading-page img {
+  position: absolute;
+  width: 5rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 5rem;
+  height: 5rem;
+}
+
+.loading-page .circle {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  border: 10px solid beige;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: loading 0.8s ease-in infinite;
+          animation: loading 0.8s ease-in infinite;
+}
+
+@-webkit-keyframes loading {
+  100% {
+    width: 9rem;
+    height: 9rem;
+    border: 1px solid beige;
+    opacity: 0;
+  }
+}
+
+@keyframes loading {
+  100% {
+    width: 9rem;
+    height: 9rem;
+    border: 1px solid beige;
+    opacity: 0;
+  }
+}
+
 .comment {
   color: inherit;
   opacity: .5;

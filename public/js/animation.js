@@ -1,5 +1,14 @@
 const PAGE_DELAY = 0.5;
 
+// loading animation
+
+window.addEventListener('load', () => {
+  const loadingPage = document.querySelector('.loading-page');
+  loadingPage.style.opacity = 0;
+})
+
+
+// page animaitons
 gsap.from(".links", { duration: 0.5, y: "-10", delay: PAGE_DELAY });
 gsap.from(".links a", { duration: 0.1, rotateX: "50deg", delay: PAGE_DELAY });
 gsap.from(".links", { duration: 0.5, opacity: 0, delay: PAGE_DELAY });
