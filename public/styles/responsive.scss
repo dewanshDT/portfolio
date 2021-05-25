@@ -10,9 +10,11 @@
   .stats {
     flex-wrap: wrap;
   }
+
 }
 
 @media screen and (max-width: 900px) {
+  
   body {
     overflow-x: hidden;
   }
