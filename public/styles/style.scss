@@ -33,8 +33,7 @@ body {
 .loading-page {
   z-index: 4;
   position: fixed;
-  background: linear-gradient(to right, #191919ee, #191919ee),
-  url(/assets/doodle.jpg);
+  background: var(--uiDark);
   width: 100vw;
   height: 100vh;
   display: flex;
