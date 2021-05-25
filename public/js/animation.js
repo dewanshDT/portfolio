@@ -6,36 +6,25 @@ window.addEventListener('load', () => {
   const loadingPage = document.querySelector('.loading-page');
   loadingPage.style.opacity = 0;
   loadingPage.style.display = 'none';
+
+  // page animaitons
+  gsap.from(".links", { duration: 0.5, y: "-10", delay: PAGE_DELAY });
+  gsap.from(".links a", { duration: 0.1, rotateX: "50deg", delay: PAGE_DELAY });
+  gsap.from(".links", { duration: 0.5, opacity: 0, delay: PAGE_DELAY });
+
+  gsap.from(".intro img", {duration: 1, y: "-100", delay: PAGE_DELAY, ease: "bounce"});
+  gsap.from(".intro img", {duration: 0.5, opacity: 0, delay: PAGE_DELAY, ease: "bounce"});
+  gsap.from(".intro img", { duration: 1, rotateZ: "-30deg", delay: 1 });
+
+  gsap.from(".intro h1", { duration: 1, x: "-50", delay: PAGE_DELAY });
+  gsap.from(".intro h1", { duration: 0.5, opacity: 0, delay: PAGE_DELAY });
+
+  gsap.from(".intro h3", { duration: 1, x: "50", delay: PAGE_DELAY });
+  gsap.from(".intro h3", { duration: 0.5, opacity: 0, delay: PAGE_DELAY });
+
+  gsap.from(".intro p", { duration: 1, x: "-50", delay: PAGE_DELAY });
+  gsap.from(".intro p", { duration: 0.5, opacity: 0, delay: PAGE_DELAY });
 })
-
-
-// page animaitons
-gsap.from(".links", { duration: 0.5, y: "-10", delay: PAGE_DELAY });
-gsap.from(".links a", { duration: 0.1, rotateX: "50deg", delay: PAGE_DELAY });
-gsap.from(".links", { duration: 0.5, opacity: 0, delay: PAGE_DELAY });
-
-gsap.from(".intro img", {
-  duration: 1,
-  y: "-100",
-  delay: PAGE_DELAY,
-  ease: "bounce",
-});
-gsap.from(".intro img", {
-  duration: 0.5,
-  opacity: 0,
-  delay: PAGE_DELAY,
-  ease: "bounce",
-});
-gsap.from(".intro img", { duration: 1, rotateZ: "-30deg", delay: 1 });
-
-gsap.from(".intro h1", { duration: 1, x: "-50", delay: PAGE_DELAY });
-gsap.from(".intro h1", { duration: 0.5, opacity: 0, delay: PAGE_DELAY });
-
-gsap.from(".intro h3", { duration: 1, x: "50", delay: PAGE_DELAY });
-gsap.from(".intro h3", { duration: 0.5, opacity: 0, delay: PAGE_DELAY });
-
-gsap.from(".intro p", { duration: 1, x: "-50", delay: PAGE_DELAY });
-gsap.from(".intro p", { duration: 0.5, opacity: 0, delay: PAGE_DELAY });
 
 TweenLite.defaultEase = Linear.easeNone;
 const controller = new ScrollMagic.Controller();
