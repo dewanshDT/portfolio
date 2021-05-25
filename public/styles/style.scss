@@ -26,7 +26,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   overflow-x: hidden;
-  background-image: linear-gradient(to right, #191919, #191919ee),
+  background-image: linear-gradient(to right, #191919, #191919dd),
     url(/assets/doodle.jpg);
 }
 
@@ -96,7 +96,7 @@ body {
 .header {
   z-index: 2;
   width: 100vw;
-  background: linear-gradient(#191919, #0000);
+  background: linear-gradient(#191919, 80%, #0000);
   display: flex;
   justify-content: center;
   position: sticky;
@@ -121,11 +121,16 @@ body {
   }
 
   .brand {
-    color: var(--ascentColor);
+    color: beige;
     font-size: inherit;
     height: 2.5rem;
     display: flex;
     align-items: center;
+    cursor: default;
+
+    .method {
+      color: var(--ascentColor);
+    }
   }
 
   nav {

@@ -9,20 +9,6 @@
   --xsFont: 1.3rem;
 }
 
-body {
-  background-image: -webkit-gradient(linear, left top, right top, from(#191919), to(#191919dd)), url("/assets/circles.jpg");
-  background-image: linear-gradient(to right, #191919, #191919dd), url("/assets/circles.jpg");
-  background-repeat: no-repeat;
-  background-position: right top;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  overflow: hidden;
-}
-
 .header {
   position: fixed;
   top: 0;
@@ -38,9 +24,7 @@ body {
           flex-direction: column;
   flex-direction: column;
   padding: 3rem 4rem;
-  min-width: 100vw;
-  height: 100vh;
-  overflow: auto;
+  min-width: 100%;
 }
 
 .about-page img {
@@ -51,7 +35,7 @@ body {
 }
 
 .about-page h1 {
-  font-size: var(--lFont);
+  font-size: var(--mFont);
   margin-bottom: 0.5em;
 }
 
@@ -60,7 +44,7 @@ body {
 }
 
 .about-page h3 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: var(--sFont);
   margin: 0.5em 0;
 }

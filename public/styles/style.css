@@ -36,8 +36,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   overflow-x: hidden;
-  background-image: -webkit-gradient(linear, left top, right top, from(#191919), to(#191919ee)), url(/assets/doodle.jpg);
-  background-image: linear-gradient(to right, #191919, #191919ee), url(/assets/doodle.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(#191919), to(#191919dd)), url(/assets/doodle.jpg);
+  background-image: linear-gradient(to right, #191919, #191919dd), url(/assets/doodle.jpg);
 }
 
 .loading-page {
@@ -131,8 +131,8 @@ body {
 .header {
   z-index: 2;
   width: 100vw;
-  background: -webkit-gradient(linear, left top, left bottom, from(#191919), to(#0000));
-  background: linear-gradient(#191919, #0000);
+  background: -webkit-gradient(linear, left top, left bottom, from(#191919), color-stop(80%), to(#0000));
+  background: linear-gradient(#191919, 80%, #0000);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,7 +170,7 @@ body {
 }
 
 .navbar .brand {
-  color: var(--ascentColor);
+  color: beige;
   font-size: inherit;
   height: 2.5rem;
   display: -webkit-box;
@@ -179,6 +179,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: default;
+}
+
+.navbar .brand .method {
+  color: var(--ascentColor);
 }
 
 .navbar nav {
