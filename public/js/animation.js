@@ -8,6 +8,8 @@ window.addEventListener('load', () => {
   loadingPage.style.display = 'none';
 
   // page animaitons
+  gsap.from(".header", { diration: 1, opacity: 0, delay: PAGE_DELAY}),
+
   gsap.from(".links", { duration: 0.5, y: "-10", delay: PAGE_DELAY });
   gsap.from(".links a", { duration: 0.1, rotateX: "50deg", delay: PAGE_DELAY });
   gsap.from(".links", { duration: 0.5, opacity: 0, delay: PAGE_DELAY });
@@ -103,7 +105,7 @@ var finalScene = new ScrollMagic.Scene({
   triggerHook: 0.1,
 })
   .setPin(".final")
-  .setTween(contentTL)
+  .setTween(finalTL)
   .addTo(controller);
 
 var madeWithScene = new ScrollMagic.Scene({
