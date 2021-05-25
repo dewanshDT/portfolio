@@ -5,6 +5,7 @@ const PAGE_DELAY = 0.5;
 window.addEventListener('load', () => {
   const loadingPage = document.querySelector('.loading-page');
   loadingPage.style.opacity = 0;
+  loadingPage.style.display = 'none';
 })
 
 
