@@ -3,18 +3,18 @@
         "title": "Snake",
         "discription": "A retro snake game made form vanilla JavaScript. Use Arrow keys to play",
         "dataSlugHash": "yLMXLoV",
-        "openTabs": "js,result"
+        "openTabs": "result,js"
     },
     {
         "title": "Ball and Cube",
         "discription": "CSS only animation",
         "dataSlugHash": "oNZWRNL",
-        "openTabs": "css,result"
+        "openTabs": "result,css"
     },
     {
         "title": "Todo List",
         "discription": "a todo list app made from Vanilla JavaScript",
         "dataSlugHash": "WNRVdxW",
-        "openTabs": "js,result"
+        "openTabs": "result,js"
     }
 ]

@@ -408,3 +408,13 @@ main {
     }
   }
 }
+
+footer {
+  background-color: #ffb60090;
+  width: 100%;
+  text-align: center;
+  p {
+    padding: 0.5em;
+    font-size: var(--xsFont);
+  }
+}

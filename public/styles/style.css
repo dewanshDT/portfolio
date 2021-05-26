@@ -513,4 +513,15 @@ main {
   font-size: var(--xsFont);
   font-weight: 400;
 }
+
+footer {
+  background-color: #ffb60090;
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  padding: 0.5em;
+  font-size: var(--xsFont);
+}
 /*# sourceMappingURL=style.css.map */
