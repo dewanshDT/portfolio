@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
   loadingPage.style.display = 'none';
 
   // page animaitons
-  gsap.from(".header", { diration: 1, opacity: 0, delay: PAGE_DELAY}),
+  gsap.from(".header", { duration: 1, opacity: 0, delay: PAGE_DELAY});
 
   gsap.from(".links", { duration: 0.5, y: "-10", delay: PAGE_DELAY });
   gsap.from(".links a", { duration: 0.1, rotateX: "50deg", delay: PAGE_DELAY });
@@ -26,9 +26,13 @@ window.addEventListener('load', () => {
 
   gsap.from(".intro p", { duration: 1, x: "-50", delay: PAGE_DELAY });
   gsap.from(".intro p", { duration: 0.5, opacity: 0, delay: PAGE_DELAY });
+
+  // about page
+  gsap.from(".about-page", { duration: 2, opacity: 0, y: "-50", delay: PAGE_DELAY, ease: "expo"});
+  gsap.from(".codepen-container", { duration: 2, opacity: 0, y: "-50", delay: PAGE_DELAY, ease: "expo"});
 })
 
-TweenLite.defaultEase = Linear.easeNone;
+// TweenLite.defaultEase = Linear.easeNone;
 const controller = new ScrollMagic.Controller();
 var contentTL = new gsap.timeline();
 var finalTL = new gsap.timeline();
