@@ -17,6 +17,22 @@
           box-sizing: border-box;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: var(--uiDark);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--ascentColor);
+  border-radius: 5px;
+}
+
 body {
   background-color: var(--uiDark);
   color: var(--fontColor);
