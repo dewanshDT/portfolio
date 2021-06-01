@@ -1,5 +1,11 @@
 [
     {
+        "title": "Clock",
+        "discription": "A sweet and simple analog clock.",
+        "dataSlugHash": "KKWZMgx",
+        "openTabs": "result,js"
+    },
+    {
         "title": "Snake",
         "discription": "A retro snake game made form vanilla JavaScript. Use Arrow keys to play",
         "dataSlugHash": "yLMXLoV",
