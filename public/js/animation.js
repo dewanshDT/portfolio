@@ -129,5 +129,4 @@ const nav = document.querySelector('nav');
 menueBtn.addEventListener("click", () => {
   nav.classList.toggle("visibal");
   menueBtn.classList.toggle("on");
-  console.log('clicked');
 });

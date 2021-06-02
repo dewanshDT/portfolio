@@ -28,18 +28,20 @@
             justify-content: flex-start;
   }
   .navbar .hamburgur {
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
     z-index: 3;
     display: block;
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 5%;
-    -webkit-transform: translateY(-45%);
-            transform: translateY(-45%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
   .navbar .hamburgur .line {
     width: 25px;
     height: 3px;
-    margin: 4px 0;
+    margin: 7px 0;
     border-radius: 1.5px;
     background-color: beige;
   }

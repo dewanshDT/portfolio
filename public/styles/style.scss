@@ -196,8 +196,8 @@ body {
   }
 
   .hamburgur.on {
+    margin-top: .5rem;
     .line {
-      transition: all 300ms ease;
       background: var(--ascentColor);
       position:absolute;
       right: .1rem;
@@ -209,10 +209,6 @@ body {
 
       &:nth-child(2) {
         transform: rotateZ(45deg);
-      }
-
-      &:nth-child(3) {
-        display: none;
       }
     }
   }
