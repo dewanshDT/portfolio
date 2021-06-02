@@ -1,15 +1,6 @@
 const greeting = document.getElementById('greeting');
 setGreeting();
 
-// responsive navbar
-const menueBtn = document.querySelector(".hamburgur");
-const nav = document.querySelector('nav');
-
-menueBtn.addEventListener("click", () => {
-  nav.classList.toggle("visibal");
-  menueBtn.classList.toggle("on");
-});
-
 // greeting
 function setGreeting() {
     const date = new Date();
