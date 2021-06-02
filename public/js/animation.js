@@ -120,13 +120,3 @@ var madeWithScene = new ScrollMagic.Scene({
   .setPin(".made-with")
   .setTween(madeWithTL)
   .addTo(controller);
-
-// responsive navbar
-
-const menueBtn = document.querySelector(".hamburgur");
-const nav = document.querySelector('nav');
-
-menueBtn.addEventListener("click", () => {
-  nav.classList.toggle("visibal");
-  menueBtn.classList.toggle("on");
-});
