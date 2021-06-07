@@ -2,21 +2,65 @@
 <html lang="en">
   <%- include("partials/head") %> <%- include("partials/navBar") %>
   <div class="container">
-
-    <% codepenData.forEach(({ title, discription, codepenURL, authorURL, openTabs, dataSlugHash }) => { %> 
-        <div class="codepen-container">
-            <h1><%= title %></h1>
-            <h4><%= discription %></h4>
-            <p class="codepen" data-height="400" data-theme-id="dark" data-default-tab=<%= openTabs %> data-user="dewanshdt" data-slug-hash=<%= dataSlugHash  %> style="height: 395px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Snake">
-                <span>See the Pen <a href="https://codepen.io/dewanshdt/pen/<%= dataSlugHash %>" >
-                Snake</a> by dewanshDT (<a href="https://codepen.io/dewanshdt">@dewanshdt</a>)
-                on <a href="https://codepen.io">CodePen</a>.</span>
-                </p>
-                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <div class="work-container">
+      <img src="/assets/firegallery.png" alt="" />
+      <div class="work-body">
+        <h1>Fire Gallery</h1>
+        <p>
+          This is a gallery app made with <strong>ReactJS</strong> and
+          <strong>Firebase</strong> where anyone can upload images.
+        </p>
+        <div class="work-links">
+          <a href="https://dewanshdt.github.io/firegallery/">&lt;/&gt; website</a>
+          <a href="https://github.com/dewanshDT/firegallery">GitHub</a>
         </div>
-    <% }) %>     
+      </div>
+    </div>
 
-    
+    <div class="work-container">
+      <img src="/assets/breaking-bad.png" alt="" />
+      <div class="work-body">
+        <h1>Breaking Bad Website</h1>
+        <p>
+          This a website made with <strong>ReactJS</strong> and
+          <strong>breaking-bad-api</strong> where anyone can find details about their favourite characters in the TV show.
+        </p>
+        <div class="work-links">
+          <a href="https://dewanshdt.github.io/breaking-bad/">&lt;/&gt; website</a>
+          <a href="https://github.com/dewanshDT/breaking-bad">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <% codepenData.forEach(({ title, discription, codepenURL, authorURL, openTabs, dataSlugHash }) => { %>
+    <div class="codepen-container">
+      <h1><%= title %></h1>
+      <h4><%= discription %></h4>
+      <p
+        class="codepen"
+        data-height="400"
+        data-theme-id="dark"
+        data-default-tab=<%=openTabs%>
+        data-user="dewanshdt" data-slug-hash=<%= dataSlugHash %> style="height:
+        395px; box-sizing: border-box; display: flex; align-items: center;
+        justify-content: center; border: 2px solid; margin: 1em 0; padding:
+        1em;" data-pen-title="Snake">
+        <span
+          >See the Pen
+          <a href="https://codepen.io/dewanshdt/pen/<%= dataSlugHash %>">
+            Snake</a
+          >
+          by dewanshDT (<a href="https://codepen.io/dewanshdt">@dewanshdt</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span
+        >
+      </p>
+      <script
+        async
+        src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+      ></script>
+    </div>
+    <% }) %>
+
     <div class="comment">// work in progress baby....</div>
   </div>
 
