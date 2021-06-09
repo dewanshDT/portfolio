@@ -1,6 +1,6 @@
 :root {
   --ascentColor: #ffb600; //ffb600
-  --uiDark: #191919;  //191919
+  --uiDark: #191919; //191919
   --uiLight: #ffb680; //ffb680
   --fontColor: #fff;
   --xlFont: 6rem;
@@ -68,7 +68,7 @@ body {
     height: 0.1rem;
     border: 1px solid var(--ascentColor);
     border-radius: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
   }
 
   .circle:first-child {
@@ -76,11 +76,10 @@ body {
   }
 
   .circle:nth-child(2) {
-    animation: loading 0.9s linear infinite 0.45s
+    animation: loading 0.9s linear infinite 0.45s;
   }
 
   @keyframes loading {
-
     0% {
       border: 1px solid var(--ascentColor);
       opacity: 0;
@@ -102,7 +101,7 @@ body {
 
 .comment {
   color: inherit;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .container {
@@ -134,7 +133,7 @@ body {
   .hamburgur {
     display: none;
     .line {
-    transition: all 300ms ease;
+      transition: all 300ms ease;
     }
   }
 
@@ -172,6 +171,7 @@ body {
         text-decoration: none;
         color: inherit;
         font-family: inherit;
+        text-transform: uppercase;
       }
 
       a.router-link-exact-active {
@@ -196,12 +196,12 @@ body {
   }
 
   .hamburgur.on {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     .line {
       background: var(--ascentColor);
-      position:absolute;
-      right: .1rem;
-      top: -.8rem;
+      position: absolute;
+      right: 0.1rem;
+      top: -0.8rem;
 
       &:first-child {
         transform: rotateZ(-45deg);

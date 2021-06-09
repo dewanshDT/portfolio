@@ -136,7 +136,7 @@ body {
 
 .comment {
   color: inherit;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .container {
@@ -233,6 +233,7 @@ body {
   text-decoration: none;
   color: inherit;
   font-family: inherit;
+  text-transform: uppercase;
 }
 
 .navbar nav li a.router-link-exact-active {
@@ -257,14 +258,14 @@ body {
 }
 
 .navbar .hamburgur.on {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .navbar .hamburgur.on .line {
   background: var(--ascentColor);
   position: absolute;
-  right: .1rem;
-  top: -.8rem;
+  right: 0.1rem;
+  top: -0.8rem;
 }
 
 .navbar .hamburgur.on .line:first-child {
