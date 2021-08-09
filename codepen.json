@@ -1,5 +1,17 @@
 [
     {
+        "title": "Glitch",
+        "discription": "Glitchy text effect made just using css",
+        "dataSlugHash": "NWpzNgJ",
+        "openTabs": "result,js"
+    },
+    {
+        "title": "Typewriter",
+        "discription": "typewriter text effect made with vanilla javascript",
+        "dataSlugHash": "YzZerbK",
+        "openTabs": "result,js"
+    },
+    {
         "title": "Clock",
         "discription": "A sweet and simple analog clock.",
         "dataSlugHash": "KKWZMgx",
