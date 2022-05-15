@@ -38,6 +38,7 @@
 
 .about-page .subheading {
   color: var(--ascentColor);
+  line-height: 1.4em;
 }
 
 .about-page h3 {

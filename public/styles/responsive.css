@@ -127,6 +127,9 @@
     height: 4rem;
     margin: 0.5rem;
   }
+  .work-container img {
+    display: none;
+  }
   .about div {
     padding-top: 5rem;
     -webkit-box-orient: vertical;
@@ -171,7 +174,7 @@
     --lFont: 2rem;
     --mFont: 1.3rem;
     --sFont: 1rem;
-    --xsFont: .8rem;
+    --xsFont: 0.8rem;
   }
   main {
     padding: 1rem;

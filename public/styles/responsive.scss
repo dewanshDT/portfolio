@@ -10,11 +10,9 @@
   .stats {
     flex-wrap: wrap;
   }
-
 }
 
 @media screen and (max-width: 900px) {
-  
   body {
     overflow-x: hidden;
   }
@@ -115,6 +113,10 @@
     }
   }
 
+  .work-container img {
+    display: none;
+  }
+
   .about {
     div {
       padding-top: 5rem;
@@ -128,7 +130,7 @@
   .made-with {
     div {
       flex-direction: column;
-      
+
       p {
         &:nth-child(2) {
           padding-top: 1rem;
@@ -162,7 +164,7 @@
     --lFont: 2rem;
     --mFont: 1.3rem;
     --sFont: 1rem;
-    --xsFont: .8rem;
+    --xsFont: 0.8rem;
   }
 
   main {
