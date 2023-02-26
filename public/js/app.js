@@ -1,9 +1,11 @@
 const greeting = document.getElementById('greeting');
+const developmentyear = document.getElementById('developmentyear');
+const date = new Date();
 setGreeting();
+setYear();
 
 // greeting
 function setGreeting() {
-    const date = new Date();
     const dayNo = date.getDay();
     let day;
     switch (dayNo) {
@@ -26,4 +28,9 @@ function setGreeting() {
     }
     console.log(day);
     greeting.append(`Have a great ${day}.`);
+}
+
+function setYear() {
+    let year = date.getFullYear() - 2019;
+    developmentyear.innerHTML = year < 10 ? `0${year}` : year;
 }
