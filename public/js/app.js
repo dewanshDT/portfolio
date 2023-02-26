@@ -32,5 +32,5 @@ function setGreeting() {
 
 function setYear() {
     let year = date.getFullYear() - 2019;
-    developmentyear.innerHTML = year < 10 ? `0${year}` : year;
+    developmentyear.innerHTML = year < 10 ? `0${year}+` : `${year}+`;
 }
