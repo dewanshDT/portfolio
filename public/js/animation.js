@@ -41,8 +41,8 @@ var statsTL = new gsap.timeline();
 var madeWithTL = new gsap.timeline();
 
 aboutTL
-  .from(".about h1", { x: "-50", duration: 1 })
-  .from(".about h1", { opacity: 0, duration: 0.5 }, "<0.1")
+  .from(".about h2", { x: "-50", duration: 1 })
+  .from(".about h2", { opacity: 0, duration: 0.5 }, "<0.1")
   .from(".about p", { x: "50", duration: 1 }, "0.1")
   .from(".about p", { opacity: 0, duration: 0.5 }, "<0.2")
   .delay(3)
@@ -63,16 +63,16 @@ madeWithTL
   .to(".made-with", { opacity: 0, duration: 0.3 });
 
 contentTL
-  .from(".content h1", { x: "-50", duration: 1 })
-  .from(".content h1", { opacity: 0, duration: 0.5 }, "<0.1")
+  .from(".content h2", { x: "-50", duration: 1 })
+  .from(".content h2", { opacity: 0, duration: 0.5 }, "<0.1")
   .from(".content p", { x: "50", duration: 1 }, "<0.1")
   .from(".content p", { opacity: 0, duration: 0.5 }, "<0.2")
   .delay(3)
   .to(".content", { opacity: 0, duration: 0.3 });
 
 finalTL
-  .from(".final h1", { x: "-50", duration: 1 })
-  .from(".final h1", { opacity: 0, duration: 0.5 }, "<0.1")
+  .from(".final h2", { x: "-50", duration: 1 })
+  .from(".final h2", { opacity: 0, duration: 0.5 }, "<0.1")
   .from(".final p", { x: "50", duration: 1 }, "<0.1")
   .from(".final p", { opacity: 0, duration: 0.5 }, "<0.2");
 
