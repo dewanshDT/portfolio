@@ -26,6 +26,9 @@ app.get("/works", (req, res) => {
   res.render("works", { title, style, codepenData });
 });
 
+
+app.use('/sitemap.xml', express.static(__dirname + '/sitemap.xml'));
+
 app.listen(PORT, () => {
   console.log(`LISTENING ON PORT ${PORT}`);
 });

@@ -7,11 +7,9 @@
     --xsFont: 1.3rem;
   }
   .stats {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
-
 @media screen and (max-width: 900px) {
   body {
     overflow-x: hidden;
@@ -23,20 +21,16 @@
   .navbar {
     position: relative;
     padding-top: 0.7rem;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
   }
   .navbar .hamburgur {
-    -webkit-transition: all 300ms ease;
     transition: all 300ms ease;
     z-index: 3;
     display: block;
     position: absolute;
     top: 40%;
     right: 5%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
   }
   .navbar .hamburgur .line {
     width: 25px;
@@ -48,47 +42,30 @@
   .navbar nav {
     z-index: 2;
     opacity: 0;
-    -webkit-transition: opacity 300ms ease;
     transition: opacity 300ms ease;
     pointer-events: none;
     position: fixed;
     top: 0;
     width: 100%;
     height: 100%;
-    background: -webkit-gradient(linear, left bottom, left top, from(#191919), color-stop(#191919ee), to(#191919aa));
-    background: linear-gradient(to top, #191919, #191919ee, #191919aa);
+    background: linear-gradient(to top, #191919, rgba(25, 25, 25, 0.9333333333), rgba(25, 25, 25, 0.6666666667));
   }
   .navbar nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
     height: 100%;
     width: 100%;
     padding: 4rem 2rem;
     font-size: 2rem;
     pointer-events: inherit;
-    -webkit-transform: translateX(3rem);
-            transform: translateX(3rem);
+    transform: translateX(3rem);
   }
   .navbar .links {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     position: static;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     margin-right: 2rem;
   }
   .navbar .links a {
@@ -99,16 +76,9 @@
   .intro {
     margin: 3rem 0;
     padding-top: 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .intro h1 {
     font-size: var(--lFont);
@@ -132,19 +102,13 @@
   }
   .about div {
     padding-top: 5rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .about div h1 {
     padding-bottom: 0.5em;
   }
   .made-with div {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .made-with div p:nth-child(2) {
     padding-top: 1rem;
@@ -161,13 +125,9 @@
     height: 7rem;
   }
   .about-page .about-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 @media screen and (max-width: 500px) {
   :root {
     --xlFont: 4rem;
@@ -181,10 +141,7 @@
     overflow-x: hidden;
   }
   .stats {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin-top: 0.3rem;
   }
   .stats .stat {
@@ -194,5 +151,4 @@
   .stats .stat .stat-num {
     font-size: var(--xlFont);
   }
-}
-/*# sourceMappingURL=responsive.css.map */
+}/*# sourceMappingURL=responsive.css.map */
