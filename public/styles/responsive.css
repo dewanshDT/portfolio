@@ -80,7 +80,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .intro h1 {
+  .intro h2 {
     font-size: var(--lFont);
   }
   .intro h3,
@@ -104,7 +104,7 @@
     padding-top: 5rem;
     flex-direction: column;
   }
-  .about div h1 {
+  .about div h2 {
     padding-bottom: 0.5em;
   }
   .made-with div {

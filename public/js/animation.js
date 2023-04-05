@@ -18,8 +18,8 @@ window.addEventListener('load', () => {
   gsap.from(".intro img", {duration: 0.5, opacity: 0, delay: PAGE_DELAY, ease: "bounce"});
   gsap.from(".intro img", { duration: 1, rotateZ: "-30deg", delay: 1 });
 
-  gsap.from(".intro h1", { duration: 1, x: "-50", delay: PAGE_DELAY });
-  gsap.from(".intro h1", { duration: 0.5, opacity: 0, delay: PAGE_DELAY });
+  gsap.from(".intro h2", { duration: 1, x: "-50", delay: PAGE_DELAY });
+  gsap.from(".intro h2", { duration: 0.5, opacity: 0, delay: PAGE_DELAY });
 
   gsap.from(".intro h3", { duration: 1, x: "50", delay: PAGE_DELAY });
   gsap.from(".intro h3", { duration: 0.5, opacity: 0, delay: PAGE_DELAY });
