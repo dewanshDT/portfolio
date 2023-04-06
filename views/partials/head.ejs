@@ -48,7 +48,12 @@
   <link rel="stylesheet" href="/styles/<%= style %> " />
   <link rel="stylesheet" href="/styles/responsive.css" />
   <script defer src="/js/app.js"></script>
-  <title><%= title %>
+  <title>
+    <% if (title === "()") { %>
+      Dewansh Thakur | dew()
+      <%} else { %>
+      dew<%= title %>
+      <% } %>
   </title>
 </head>
 

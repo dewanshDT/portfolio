@@ -9,19 +9,19 @@ app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
-  const title = "Dewansh Thakur | dew()";
+  const title = "()";
   const style = ""
   res.render("home", { title, style });
 });
 
 app.get("/about", (req, res) => {
-  const title = "dew.about()";
+  const title = ".about()";
   const style = "aboutstyle.css";
   res.render("about", { title, style });
 });
 
 app.get("/works", (req, res) => {
-  const title = "dew.works()";
+  const title = ".works()";
   const style = "workstyle.css";
   res.render("works", { title, style, codepenData });
 });
